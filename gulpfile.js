@@ -85,7 +85,7 @@ gulp.task('css-libs', ['css'], function() {
         .pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
 });
 
-gulp.task('watch', ['browser-sync', 'css', 'scripts', 'sprite', 'sass', 'iconfont'], function() {
+gulp.task('watch', ['browser-sync', 'css', 'scripts', 'sprite', 'sass'], function() {
     // gulp.watch('src/css/**/*.css', ['css']); // Наблюдение за css файлами в папке css
     gulp.watch('src/scss/**/*.scss', ['sass']);
     gulp.watch('src/icons/*.svg', ['iconfont']);

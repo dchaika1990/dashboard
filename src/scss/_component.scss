@@ -1,0 +1,105 @@
+// Component
+%title{
+  font-size: 16px;
+  color: $titleColor;
+  font-weight: $fontBold;
+}
+.section-title{
+  @extend %title;
+}
+.page-title{
+  @extend %title;
+  text-transform: uppercase;
+}
+
+//links
+
+.link{
+  font-size: $linkFontSizeDefault;
+  color: $linkColor;
+
+  &.large-link{
+    font-size: $linkLargeFont;
+  }
+
+  &:hover{
+    color: $linkHoverColor;
+  }
+}
+
+//button
+
+.btn{
+  padding: 12px 22px;
+  font-size: $btnFontSize;
+  color: $btnDefaultColor;
+  border-right: 2px;
+  display: inline-block;
+
+  &.btn-default{
+    background-color: $btnDefaultBg;
+
+    &:hover{
+      background-color: $btnDefaultBgHover;
+    }
+  }
+
+  &.btn-action{
+    background-color: $btnActionBg;
+
+    &:hover{
+      background-color: $orangeLight;
+    }
+  }
+  &.btn-disabled{
+    background-color: $btnDisabledBg;
+    cursor: not-allowed;
+
+    &:hover{
+      background-color: $btnDisabledBgHover;
+    }
+  }
+}
+
+// table
+
+.table{
+  border-collapse: collapse;
+  font-size: $tableFontSize;
+
+  tbody tr{
+    &:hover{
+      background-color: $xsLightGrey;
+    }
+  }
+  tr{
+
+    th{
+      padding: 30px 18px;
+      color: $grey;
+    }
+
+    td{
+      padding: 18px;
+      border-top: 1px solid $lightGrey;
+
+      &.td-title{
+        font-size: 16px;
+        color: $grey;
+      }
+    }
+  }
+
+  .table-sort{
+    color: $grey;
+    padding: 8px 10px;
+    margin: -8px -10px;
+    border-right: 2px;
+    cursor: pointer;
+
+    &:hover{
+      background-color: $tableTrHover;
+      color: $black;
+    }
+  }
+}
