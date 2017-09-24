@@ -1,15 +1,21 @@
 // Component
 %title{
-  font-size: 16px;
+  font-size: $titleFontSize;
   color: $titleColor;
   font-weight: $fontBold;
 }
 .section-title{
   @extend %title;
+
+
 }
 .page-title{
   @extend %title;
   text-transform: uppercase;
+
+  .small-title{
+    font-size: $smallTitleFontSize;
+  }
 }
 
 //links
@@ -101,5 +107,247 @@
       background-color: $tableTrHover;
       color: $black;
     }
+  }
+}
+
+// circle
+.circle{
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: transparent;
+
+  &.circle-blue{
+    background-color: $tabsCircleBlueBG;
+  }
+
+  &.circle-orange{
+    background-color: $tabsCircleOrangeBG;
+  }
+
+  &.circle-green{
+    background-color: $tabsCircleGreenBG;
+  }
+}
+
+// tabs
+.tabs{
+
+  .tab{
+    display: flex;
+    padding: 12px $defaultIndent;
+    background-color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+
+    & + a{
+      margin-left: $defaultIndent;
+    }
+
+    &:hover{
+      background-color: $xsLightGrey;
+    }
+
+    &.active{
+      background-color: $xsLightGrey;
+    }
+
+    & span + span{
+      padding-left: 13px;
+    }
+
+    & span{
+      line-height: 1.3;
+    }
+  }
+}
+
+// inputs
+.form{
+  width: 155px;
+  border: 1px solid $lightGrey;
+  border-radius: 2px;
+  padding: 6px $defaultIndent;
+  font-family: $fontFamily;
+  font-weight: $fontLight;
+
+  &:hover,
+  &:focus{
+    border-color: $grey;
+  }
+
+  & + .form{
+    margin-top: 14px;
+  }
+
+  &.big{
+    height: 120px;
+    padding: 10px $defaultIndent;
+  }
+
+  &.danger{
+    border: 2px solid $red;
+  }
+
+  &[disabled]{
+    background-color: #fff;
+    border-color: $lightGrey;
+
+    &::placeholder{
+    color: $grey;
+    }
+  }
+}
+
+//Notification
+.notification{
+  width: 265px;
+  padding: 13px 15px 13px 25px;
+  color: #fff;
+  cursor: pointer;
+
+  &.positive{
+    background-color: $xsLightGgreen;
+
+    &:hover{
+      background-color: $lightGgreen;
+    }
+  }
+
+  &.negative{
+    background-color: $lightPink;
+
+    &:hover{
+      background-color: $pink;
+    }
+  }
+}
+
+// container
+.container-fluid{
+  padding: $defaultIndent;
+}
+.container-sm{
+  max-width: 684px;
+  margin: 0 auto;
+}
+
+//header
+.header{
+  background-color: #fff;
+  border-bottom:1px solid $lightGrey;
+  right: 0;
+  left: 0;
+  height: 60px; //убрать потом и заменить паддингами
+}
+
+// aside
+%activeLink{
+  background-color: #282828;
+  color: #fff;
+  border-left-color: $orange;
+}
+
+.aside{
+  background-color: $asideBG;
+  width: $asideWidth;
+  height: 100vh;
+  left: 0;
+  z-index: 100;
+
+  .menu-control{
+    padding: $defaultIndent;
+
+      .menu-btn{
+        cursor: pointer;
+
+        span{
+          display: block;
+          width: 18px;
+          height: 2px;
+          background-color: $darkGrey;
+
+          & + span{
+            margin-top: 5px;
+          }
+        }
+      }
+  }
+
+  .aside-menu{
+
+    ul{
+
+      li{
+        color: $darkGrey;
+
+        &.active{
+          a{
+            @extend %activeLink;
+          }
+        }
+
+        a{
+          display: block;
+          padding: 13px;
+          border-left: 4px solid transparent;
+
+          &:hover{
+            @extend %activeLink
+          }
+        }
+      }
+    }
+  }
+
+  .your-manager{
+    padding: 27px $defaultIndent 0;
+    border-top: $darkGrey;
+
+    .manager-info{
+      margin-top: $defaultIndent;
+
+      .manager-photo{
+        position: relative;
+        margin-right: 10px;
+
+        .status{
+          width: 11px;
+          height: 11px;
+          border-radius: 50%;
+          position: absolute;
+          right: 0;
+          top: 0;
+
+          &.online{
+            background-color: $green;
+          }
+          &.offline{
+            background-color: $red;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Content wrapper
+.content-wrapper{
+  padding: $defaultIndent;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+}
+.panel{
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+
+  .panel-header{
+    border-bottom: 1px solid $lightGrey;
+    padding: $defaultIndent;
+  }
+
+  .panel-body{
+    padding: $defaultIndent;
   }
 }
