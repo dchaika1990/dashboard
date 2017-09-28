@@ -8,6 +8,8 @@
     <title>Template</title>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/myfont.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -27,7 +29,7 @@
     <div class="menu-control flex-container align-items-center justify-content-sb">
         <div class="logo">
             <a href="#">
-                <img src="" alt="">
+                <img src="img/logo.png" alt="logo">
             </a>
         </div>
         <div class="menu-btn">
@@ -39,7 +41,7 @@
     <div class="aside-menu">
         <ul>
             <li class="active"><a href="">General</a></li>
-            <li><a href="">Details</a></li>
+            <li><a href=""><span class="icon icon-details"></span>Details</a></li>
             <li><a href="">Links</a></li>
             <li><a href="">Banners</a></li>
             <li><a href="">Personal data</a></li>
@@ -50,7 +52,7 @@
             <h3 class="page-title small-title">Your manager</h3>
             <div class="manager-info flex-container align-items-center">
                 <div class="manager-photo">
-                    <img src="" alt="">
+                    <img src="img/manager-photo.png" alt="manager-photo">
                     <div class="status online"></div>
                 </div>
                 <a class="link">Mikhael E.</a>
@@ -62,15 +64,60 @@
 
 <main>
     <div class="content-wrapper">
-        <div class="panel">
+        <div class="panel links">
             <div class="panel-header">
                 <h3 class="page-title">Links</h3>
             </div>
             <div class="panel-body">
                 <div class="btn-row text-center">
-                    <div class="btn btn-action">
-                        <a href="#">add new</a>
-                    </div>
+                    <a href="" class="btn btn-action">add new</a>
+                </div>
+                <div class="container-sm">
+                    <table class="table full-width">
+                        <tr>
+                            <td class="text-bold td-title">Home page</td>
+                            <td><a href="" class="link large-link">http://www.homepage.com</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold td-title">Currently offer</td>
+                            <td><a href="" class="link large-link">http://www.currently.com</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold td-title">Blurpix</td>
+                            <td><a href="" class="link large-link">http://www.blurpix.com</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold td-title">Your Site</td>
+                            <td><a href="" class="link large-link">http://www.yoursite.com</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold td-title">Google</td>
+                            <td><a href="" class="link large-link">http://www.google.com</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold td-title">Facebook</td>
+                            <td><a href="" class="link large-link">Facebook</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold td-title">Dashboard</td>
+                            <td><a href="" class="link large-link">http://www.dashboard.com</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold td-title">Blurax</td>
+                            <td><a href="" class="link large-link">http://www.blurax.com</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold td-title">Piece of Wine</td>
+                            <td><a href="" class="link large-link">Piece of Wine</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold td-title">Twitter</td>
+                            <td><a href="" class="link large-link">http://www.twitter.com</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="btn-row text-center">
+                    <a href="" class="btn btn-action">add new</a>
                 </div>
             </div>
         </div>
