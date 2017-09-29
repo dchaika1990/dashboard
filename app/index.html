@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Template</title>
-
+    <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- ICONS -->
     <link rel="stylesheet" href="css/myfont.css">
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -40,13 +45,13 @@
     </div>
     <div class="aside-menu">
         <ul>
-            <li class="active"><a href="">General</a></li>
+            <li class="active"><a href=""><span class="icon icon-general"></span>General</a></li>
             <li><a href=""><span class="icon icon-details"></span>Details</a></li>
-            <li><a href="">Links</a></li>
-            <li><a href="">Banners</a></li>
-            <li><a href="">Personal data</a></li>
-            <li><a href="">Payout</a></li>
-            <li><a href="">Postback</a></li>
+            <li><a href=""><span class="icon icon-links"></span>Links</a></li>
+            <li><a href=""><span class="icon icon-banners"></span>Banners</a></li>
+            <li><a href=""><span class="icon icon-personaldata"></span>Personal data</a></li>
+            <li><a href=""><span class="icon icon-payout"></span>Payout</a></li>
+            <li><a href=""><span class="icon icon-postback"></span>Postback</a></li>
         </ul>
         <div class="your-manager">
             <h3 class="page-title small-title">Your manager</h3>
@@ -64,6 +69,49 @@
 
 <main>
     <div class="content-wrapper">
+        <div class="panel">
+            <div class="panel-header">
+                <h3 class="page-title">General statistic</h3>
+            </div>
+            <div class="panel-date text-center">
+                <form class="datepicker-form">
+                    <div class="date-input-wrap">
+                        <input class="date-control" type="text" id="from" name="from">
+                        <input class="date-control" type="text" id="to" name="to">
+                    </div>
+                    <button class="btn btn-action"><span class="icon icon-refresh"></span></button>
+                </form>
+            </div>
+            <div class="panel-body">
+                <div class="container container-sm">
+                    <div class="statistics flex-container justify-content-sb">
+                        <ul>
+                            <li>
+                                <span class="statistics-title">Visit Signups</span>
+                                <span>124</span>
+                            </li>
+                            <li>
+                                <span class="statistics-title">FTD</span>
+                                <span>425</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span class="statistics-title">Net Deposit</span>
+                                <span>564</span>
+                            </li>
+                            <li>
+                                <span class="statistics-title">Turn over</span>
+                                <span>432</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chart-wrap">
+                        <canvas id="myChart" width="400" height="400"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="panel links">
             <div class="panel-header">
                 <h3 class="page-title">Links</h3>
@@ -124,8 +172,21 @@
     </div>
 </main>
 
+
+
+<!-- MODAL ADD LINKS -->
+<div class="modal">
+    <h1>Modal</h1>
+</div>
+
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+<script src="js/jquery.bpopup.min.js"></script>
+
+<!-- Init plugins -->
+<script src="js/init.js"></script>
 
 </body>
 </html>

@@ -39,8 +39,9 @@
   padding: 12px 22px;
   font-size: $btnFontSize;
   color: $btnDefaultColor;
-  border-right: 2px;
+  border-radius: 2px;
   display: inline-block;
+  cursor: pointer;
 
   &.btn-default{
     background-color: $btnDefaultBg;
@@ -206,11 +207,11 @@
 }
 
 // inputs
-.form{
-  width: 310px;
+.form-control{
   border: 1px solid $lightGrey;
   border-radius: 2px;
   padding: 6px $defaultIndent;
+  height: 40px;
   font-family: $fontFamily;
   font-weight: $fontLight;
 
@@ -219,7 +220,7 @@
     border-color: $grey;
   }
 
-  & + .form{
+  & + .form-control{
     margin-top: 15px;
   }
 
@@ -239,6 +240,35 @@
     &::placeholder{
     color: $grey;
     }
+  }
+}
+
+// Date input block
+.datepicker-form{
+  .btn{
+    vertical-align: middle;
+    height: 48px;
+  }
+}
+.date-input-wrap{
+  padding: 4px 0;
+  vertical-align: middle;
+  border:  1px solid $lightGrey;
+  border-radius: 2px;
+  display: inline-block;
+  margin-right: 13px;
+
+  .date-control{
+    padding: 11px 16px;
+    font-size: $fontSize;
+    font-weight: $fontLight;
+    color: $black;
+  }
+
+  #to{
+    border-left:  1px solid $lightGrey;
+    background: url("../img/calendar.svg") no-repeat 90%;
+    background-size: 13px 13px;
   }
 }
 
@@ -345,6 +375,9 @@
           .icon{
             font-size: 17px;
             margin-right: 15px;
+            display: inline-block;
+            width: 16px;
+            text-align: center;
           }
 
           &:hover{
@@ -406,12 +439,13 @@
   }
 
   .panel-body{
-    padding: $defaultIndent;
+    padding: 0 $defaultIndent;
   }
 
   .panel-form{
     padding: 40px 0;
     border-bottom:  1px solid $lightGrey;
+    text-align: center;
 
     form{
       width: 455px;
@@ -424,6 +458,11 @@
   }
 }
 
+.panel-date{
+  padding: 30px 0;
+  border-bottom:  1px solid $lightGrey;
+}
+
 // label group
 .label-group{
   display: flex;
@@ -433,4 +472,49 @@
   & + .label-group{
     margin-top: 15px;
   }
+
+  & label{
+    font-weight: $fontBold;
+    color: $grey;
+  }
+
+  & .form-control{
+    width: 310px;
+  }
+}
+
+// statistics
+.statistics{
+
+  padding: 20px 0 20px 0;
+
+  ul{
+    width: 45%;
+
+    li{
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid $lightGrey;
+
+      span{
+        padding: 20px 0 5px 0;
+        font-size: 16px;
+      }
+
+      & .statistics-title{
+        font-weight: $fontBold;
+        color: $grey;
+      }
+    }
+  }
+}
+
+// chart
+.chart-wrap{
+  padding-bottom: 30px;
+}
+
+// modal
+.modal{
+  background-color: #fff;
 }
