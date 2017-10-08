@@ -117,8 +117,27 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="chart-wrap">
-                        <canvas id="myChart" width="400" height="400"></canvas>
+                    <div class="chart">
+                        <div class="chart-title title-margin">
+                            <h3 class="section-title">Earnings chart</h3>
+                        </div>
+                        <div class="tabs flex-container align-items-center">
+                            <a class="tab">
+                                <span class="circle circle-blue"></span>
+                                <span>Signups</span>
+                            </a>
+                            <a class="tab active">
+                                <span class="circle circle-orange"></span>
+                                <span>FTD</span>
+                            </a>
+                            <a class="tab">
+                                <span class="circle circle-green"></span>
+                                <span>Eaned</span>
+                            </a>
+                        </div>
+                        <div class="chart-wrap">
+                            <canvas id="myChart" width="400" height="400"></canvas>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -129,7 +148,7 @@
             </div>
             <div class="panel-body">
                 <div class="btn-row text-center">
-                    <a href="" class="btn btn-action">add new</a>
+                    <a href="" class="btn btn-action" data-modal="#add-links-modal">Add new</a>
                 </div>
                 <div class="container-sm">
                     <table class="table full-width">
@@ -176,7 +195,7 @@
                     </table>
                 </div>
                 <div class="btn-row text-center">
-                    <a href="" class="btn btn-action">add new</a>
+                    <a href="" class="btn btn-action" data-modal="#add-links-modal">Add new</a>
                 </div>
             </div>
         </div>
@@ -186,15 +205,115 @@
 
 
 <!-- MODAL ADD LINKS -->
-<div class="modal">
-    <h1>Modal</h1>
+<div class="modal" id="add-links-modal">
+    <div class="modal-header">
+        <h3 class="page-title ">Add url</h3>
+    </div>
+    <div class="modal-form-wrap align-items-center flex-container">
+
+           <div class="form-group">
+               <h3 class="page-title title-margin">Scheme name</h3>
+               <form class="flex-container align-items-center">
+                   <input type="text" class="form-control" placeholder="Name">
+                   <select class="form-control">
+                       <option>Select compain</option>
+                       <option>Compain 1</option>
+                       <option>Compain 1</option>
+                   </select>
+               </form>
+           </div>
+            <div class="form-group">
+                <h3 class="page-title title-margin">Language</h3>
+                <form class="flex-container align-items-center">
+                    <select name="" class="form-control">
+                        <option>Select compain</option>
+                        <option>Compain 1</option>
+                        <option>Compain 1</option>
+                    </select>
+                </form>
+            </div>
+
+    </div>
+    <div class="modal-body">
+        <div class="checkbox-wrap">
+            <h3 class="section-title title-margin">Select websites</h3>
+            <div class="checkboxes">
+                <div class="flex-container scrollbar-inner">
+                    <div class="checkbox-group flex-container align-items-center">
+                        <input type="checkbox" name="link1" id="link1">
+                        <label for="link1" class="flex-container align-items-center">Landing page Money</label>
+                        <span class="icon icon-show"></span>
+                    </div>
+                    <div class="checkbox-group flex-container align-items-center">
+                        <input type="checkbox" name="link1" id="link2">
+                        <label for="link2" class="flex-container align-items-center">Landing page Money</label>
+                        <span class="icon icon-show"></span>
+                    </div>
+                    <div class="checkbox-group flex-container align-items-center">
+                        <input type="checkbox" name="link1" id="link3">
+                        <label for="link3" class="flex-container align-items-center">Landing page Money</label>
+                        <span class="icon icon-show"></span>
+                    </div>
+                    <div class="checkbox-group flex-container align-items-center">
+                        <input type="checkbox" name="link1" id="link4">
+                        <label for="link4" class="flex-container align-items-center">Landing page Money</label>
+                        <span class="icon icon-show"></span>
+                    </div>
+                    <div class="checkbox-group flex-container align-items-center">
+                        <input type="checkbox" name="link1" id="link5">
+                        <label for="link5" class="flex-container align-items-center">Landing page Money</label>
+                        <span class="icon icon-show"></span>
+                    </div>
+                    <div class="checkbox-group flex-container align-items-center">
+                        <input type="checkbox" name="link1" id="link6">
+                        <label for="link6" class="flex-container align-items-center">Landing page Money</label>
+                        <span class="icon icon-show"></span>
+                    </div>
+                    <div class="checkbox-group flex-container align-items-center">
+                        <input type="checkbox" name="link1" id="link7">
+                        <label for="link7" class="flex-container align-items-center">Landing page Money</label>
+                        <span class="icon icon-show"></span>
+                    </div>
+                    <div class="checkbox-group flex-container align-items-center">
+                        <input type="checkbox" name="link1" id="link8">
+                        <label for="link8" class="flex-container align-items-center">Landing page Money</label>
+                        <span class="icon icon-show"></span>
+                    </div>
+                    <div class="checkbox-group flex-container align-items-center">
+                        <input type="checkbox" name="link1" id="link9">
+                        <label for="link9" class="flex-container align-items-center">Landing page Money</label>
+                        <span class="icon icon-show"></span>
+                    </div>
+                    <div class="checkbox-group flex-container align-items-center">
+                        <input type="checkbox" name="link1" id="link10">
+                        <label for="link10" class="flex-container align-items-center">Landing page Money</label>
+                        <span class="icon icon-show"></span>
+                    </div>
+                    <div class="checkbox-group flex-container align-items-center">
+                        <input type="checkbox" name="link1" id="link11">
+                        <label for="link11" class="flex-container align-items-center">Landing page Money</label>
+                        <span class="icon icon-show"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer align-items-center generate-link-form">
+        <form class="flex-container">
+            <input type="text" class="form-control" placeholder="Generate link">
+            <buttom class="btn btn-default"><span class="icon icon-links"></span>Copy link</buttom>
+            <buttom class="btn btn-action">Save</buttom>
+        </form>
+    </div>
 </div>
 
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
 <script src="js/jquery.bpopup.min.js"></script>
+<script src="js/jquery.scrollbar.js"></script>
 
 <!-- Init plugins -->
 <script src="js/init.js"></script>

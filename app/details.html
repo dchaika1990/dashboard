@@ -73,6 +73,15 @@
             <div class="panel-header">
                 <h3 class="page-title">Detail statistic</h3>
             </div>
+            <div class="panel-date text-center">
+                <form class="datepicker-form">
+                    <div class="date-input-wrap">
+                        <input class="date-control" type="text" id="from" name="from">
+                        <input class="date-control" type="text" id="to" name="to">
+                    </div>
+                    <button class="btn btn-action"><span class="icon icon-refresh"></span></button>
+                </form>
+            </div>
             <div class="panel-body">
 
                 <div class="container">
@@ -201,8 +210,8 @@
                             </tr>
                         </tbody>
                     </table>
-                    <ul class="pagination text-center">
-                        <li></li>
+                    <ul class="pagination flex-container align-items-center">
+                        <li><span class="icon icon-arrow-left"></span></li>
                         <li class="active"><a class="large-link" href="">1</a></li>
                         <li><a class="large-link" href="">2</a></li>
                         <li><a class="large-link" href="">3</a></li>
@@ -211,8 +220,7 @@
                         <li><a class="large-link" href="">6</a></li>
                         <li><a class="large-link" href="">7</a></li>
                         <li><a class="large-link" href="">8</a></li>
-                        <li><a class="large-link" href=""></a></li>
-                        <li></li>
+                        <li><span class="icon icon-arrow-right"></span></li>
                     </ul>
                 </div>
             </div>
@@ -223,6 +231,13 @@
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/jquery.bpopup.min.js"></script>
+<script src="js/jquery.scrollbar.js"></script>
+
+<!-- Init plugins -->
+<script src="js/init.js"></script>
 
 </body>
 </html>

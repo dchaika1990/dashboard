@@ -80,10 +80,10 @@
 <div class="guide-wrap">
     <form class="flex-container flex-column">
         <textarea class="form big" placeholder="Text input"></textarea>
-        <input class="form" type="text" placeholder="Input">
-        <input class="form" type="password" placeholder="Input">
-        <input class="form" type="text" placeholder="Input" disabled>
-        <input class="form danger" type="password" placeholder="Input">
+        <input class="form-control" type="text" placeholder="Input">
+        <input class="form-control" type="password" placeholder="Input">
+        <input class="form-control" type="text" placeholder="Input" disabled>
+        <input class="form-control danger" type="password" placeholder="Input">
     </form>
 </div>
 <span class="ic"></span>
@@ -94,22 +94,40 @@
 </div>
 <!-- Pagination -->
 <div class="guide-wrap">
-    <ul class="pagination">
-        <li></li>
+    <ul class="pagination flex-container align-items-center">
+        <li><span class="icon icon-arrow-left"></span></li>
         <li class="active"><a class="large-link" href="">1</a></li>
         <li><a class="large-link" href="">2</a></li>
         <li><a class="large-link" href="">3</a></li>
         <li><a class="large-link" href="">4</a></li>
         <li><a class="large-link" href="">5</a></li>
-        <li></li>
+        <li><a class="large-link" href="">6</a></li>
+        <li><a class="large-link" href="">7</a></li>
+        <li><a class="large-link" href="">8</a></li>
+        <li><span class="icon icon-arrow-right"></span></li>
     </ul>
 </div>
 <div class="guide-wrap">
     <span class="icon icon-calendar"></span>
 </div>
+<div class="guide-wrap range-slider-wrap">
+    <div id="slider">
+        <div id="custom-handle" class="ui-slider-handle">
+
+        </div>
+    </div>
+</div>
+
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/jquery.bpopup.min.js"></script>
+<script src="js/jquery.scrollbar.js"></script>
+
+<!-- Init plugins -->
+<script src="js/init.js"></script>
 
 </body>
 </html>

@@ -2,10 +2,8 @@
 @import "fonts";
 @import "reset";
 @import "default-classes";
-@import "component";
-@import "custom-style";
 
-h1{
-  color: #000;
-  font-size: 3em;
-}
+@import "component";
+@import "jquery.formstyler.theme";
+@import "jquery.scrollbar";
+@import "custom-style";

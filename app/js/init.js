@@ -69,4 +69,46 @@ $( function() {
             }
         });
     }
+
+    // modal init
+    var modalBtns = $('[data-modal]');
+
+    modalBtns.on('click', function (event) {
+        event.preventDefault();
+
+        var target = $(this).attr('data-modal');
+
+        $(target).bPopup({
+            closeClass: 'close-modal-btn'
+        });
+    });
+
+    // scrollbar init
+    $('.scrollbar-inner').scrollbar();
+
+    // formstaler.init
+    $('select').styler();
+
+    // range slider init
+    var handle = $('#custom-handle');
+    var range = $('#slider');
+
+    range.slider({
+        value: 50,
+        orientation: "horizontal",
+        range: "min",
+        animate: true,
+        max: 200,
+
+        create: function( event, ui ){
+            handle.append('<span class="value">'+$( this ).slider( "value" )+'hours</span>');
+            var value = handle.find('.value');
+            range.slider('option', 'valueSpan', value);
+        },
+        slide: function ( event, ui ) {
+            console.log("slider");
+            range.slider("option", "valueSpan").text(ui.value + 'hours');
+        }
+    })
+
 } );

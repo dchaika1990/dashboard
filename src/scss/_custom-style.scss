@@ -9,6 +9,10 @@ body{
   & > *{
     margin-bottom: 15px;
   }
+
+  &.range-slider-wrap{
+    height: 100px;
+  }
 }
 
 // Main style
@@ -33,4 +37,15 @@ main{
 .payout .table,
 .details .table{
   margin: 25px 0;
+}
+
+.generate-link-form{
+
+  .form-control{
+    flex-grow: 1;
+    margin-right: 16px;
+  }
+  .icon{
+    margin-right: $defaultIndent;
+  }
 }
