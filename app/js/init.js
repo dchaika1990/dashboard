@@ -87,7 +87,7 @@ $( function() {
     $('.scrollbar-inner').scrollbar();
 
     // formstaler.init
-    $('select').styler();
+    $('.select-box').styler();
 
     // range slider init
     var handle = $('#custom-handle');

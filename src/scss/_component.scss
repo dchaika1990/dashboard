@@ -631,6 +631,10 @@
     border-bottom: 1px solid $lightGrey;
     padding: 25px $defaultIndent;
 
+    //.select-box{
+    //  display: none;
+    //}
+
     .form-group{
       .page-title{
         margin-bottom: $defaultIndent;
@@ -638,7 +642,7 @@
     }
 
     .form-group:first-child{
-      flex-grow: 1;
+      //flex-grow: 1;
       margin-right: $defaultIndent;
 
       .form-control + .form-control{
@@ -647,7 +651,7 @@
     }
 
     .form-group:last-child{
-      flex-grow: 0.1;
+      //flex-grow: 0.1;
     }
 
     .form-control + .form-control{
@@ -655,7 +659,7 @@
     }
 
     .form-control{
-      width: 100%;
+      //width: 100%;
     }
   }
 
