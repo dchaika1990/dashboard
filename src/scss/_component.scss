@@ -631,36 +631,35 @@
     border-bottom: 1px solid $lightGrey;
     padding: 25px $defaultIndent;
 
-    //.select-box{
-    //  display: none;
-    //}
 
     .form-group{
       .page-title{
         margin-bottom: $defaultIndent;
       }
+
+      & .jq-selectbox{
+        flex-grow: 1;
+      }
     }
 
     .form-group:first-child{
-      //flex-grow: 1;
       margin-right: $defaultIndent;
+      width: 84%;
 
-      .form-control + .form-control{
-        margin-left: $defaultIndent;
+      .form-control{
+        margin-right: $defaultIndent;
+        flex-grow: 1;
       }
     }
 
     .form-group:last-child{
-      //flex-grow: 0.1;
+      width: 16%;
     }
 
     .form-control + .form-control{
       margin-top: 0;
     }
 
-    .form-control{
-      //width: 100%;
-    }
   }
 
   .modal-body{

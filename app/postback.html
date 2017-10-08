@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Template</title>
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="css/myfont.css">
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!-- HEADER START -->
+<header class="fixed-to-top header">
+    <ul class="flex-container  user-control">
+        <li class="cash flex-container align-items-center">
+            <span class="icon icon-wallet"></span>
+            <span class="text-bold">$1,500.00</span>
+            <a href="" class="icon icon-arrow-down"></a>
+        </li>
+        <li class="top-notification flex-container align-items-center">
+            <span class="icon icon-notification"></span>
+            <div class="top-notification-circle"></div>
+        </li>
+        <li class="top-user-name flex-container align-items-center">
+            <span class="icon icon-login"></span>
+            <span> Leonardo Dicaprio</span>
+        </li>
+        <li class="log-out flex-container align-items-center"><a href="" class="icon icon-quit"></a></li>
+    </ul>
+</header>
+<!-- HEADER END -->
+
+<!-- ASIDE START -->
+<aside class="fixed-to-top aside">
+    <div class="menu-control flex-container align-items-center justify-content-sb">
+        <div class="logo">
+            <a href="#">
+                <img src="img/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="aside-menu">
+        <ul>
+            <li><a href=""><span class="icon icon-general"></span>General</a></li>
+            <li><a href=""><span class="icon icon-details"></span>Details</a></li>
+            <li><a href=""><span class="icon icon-links"></span>Links</a></li>
+            <li class="active"><a href=""><span class="icon icon-banners"></span>Banners</a></li>
+            <li><a href=""><span class="icon icon-personaldata"></span>Personal data</a></li>
+            <li><a href=""><span class="icon icon-payout"></span>Payout</a></li>
+            <li><a href=""><span class="icon icon-postback"></span>Postback</a></li>
+        </ul>
+        <div class="your-manager">
+            <h3 class="page-title small-title">Your manager</h3>
+            <div class="manager-info flex-container align-items-center">
+                <div class="manager-photo">
+                    <img src="img/manager-photo.png" alt="manager-photo">
+                    <div class="status online"></div>
+                </div>
+                <a class="link">Mikhael E.</a>
+            </div>
+        </div>
+    </div>
+</aside>
+<!-- ASIDE END -->
+
+<main>
+    <div class="content-wrapper">
+        <div class="panel">
+            <div class="panel-header">
+                <h3 class="page-title">New postback</h3>
+            </div>
+            <div class="panel-date text-center">
+                <form class="datepicker-form">
+                    <div class="date-input-wrap">
+                        <input class="date-control" type="text" id="from" name="from">
+                        <input class="date-control" type="text" id="to" name="to">
+                    </div>
+                    <button class="btn btn-action"><span class="icon icon-refresh"></span></button>
+                </form>
+            </div>
+            <div class="panel-body">
+                <div class="container container-sm">
+                    <div class="statistics flex-container justify-content-sb">
+                        <ul>
+                            <li>
+                                <span class="statistics-title">Visit Signups</span>
+                                <span>124</span>
+                            </li>
+                            <li>
+                                <span class="statistics-title">FTD</span>
+                                <span>425</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span class="statistics-title">Net Deposit</span>
+                                <span>564</span>
+                            </li>
+                            <li>
+                                <span class="statistics-title">Turn over</span>
+                                <span>432</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chart">
+                        <div class="chart-title title-margin">
+                            <h3 class="section-title">Earnings chart</h3>
+                        </div>
+                        <div class="tabs flex-container align-items-center">
+                            <a class="tab">
+                                <span class="circle circle-blue"></span>
+                                <span>Signups</span>
+                            </a>
+                            <a class="tab active">
+                                <span class="circle circle-orange"></span>
+                                <span>FTD</span>
+                            </a>
+                            <a class="tab">
+                                <span class="circle circle-green"></span>
+                                <span>Eaned</span>
+                            </a>
+                        </div>
+                        <div class="chart-wrap">
+                            <canvas id="myChart" width="400" height="400"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel links">
+            <div class="panel-header">
+                <h3 class="page-title">Links</h3>
+            </div>
+            <div class="panel-body">
+                <div class="btn-row text-center">
+                    <a href="" class="btn btn-action" data-modal="#add-links-modal">Add new</a>
+                </div>
+                <div class="container-sm">
+                    <table class="table full-width">
+                        <tr>
+                            <td class="text-bold td-title">Home page</td>
+                            <td><a href="" class="link large-link">http://www.homepage.com</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold td-title">Currently offer</td>
+                            <td><a href="" class="link large-link">http://www.currently.com</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold td-title">Blurpix</td>
+                            <td><a href="" class="link large-link">http://www.blurpix.com</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold td-title">Your Site</td>
+                            <td><a href="" class="link large-link">http://www.yoursite.com</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold td-title">Google</td>
+                            <td><a href="" class="link large-link">http://www.google.com</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold td-title">Facebook</td>
+                            <td><a href="" class="link large-link">Facebook</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold td-title">Dashboard</td>
+                            <td><a href="" class="link large-link">http://www.dashboard.com</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold td-title">Blurax</td>
+                            <td><a href="" class="link large-link">http://www.blurax.com</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold td-title">Piece of Wine</td>
+                            <td><a href="" class="link large-link">Piece of Wine</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-bold td-title">Twitter</td>
+                            <td><a href="" class="link large-link">http://www.twitter.com</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="btn-row text-center">
+                    <a href="" class="btn btn-action" data-modal="#add-links-modal">Add new</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/jquery.bpopup.min.js"></script>
+<script src="js/jquery.scrollbar.js"></script>
+
+<!-- Init plugins -->
+<script src="js/init.js"></script>
+
+</body>
+</html>

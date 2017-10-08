@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*RESET START*/
 * {
   -webkit-box-sizing: border-box;
@@ -314,87 +315,92 @@ label {
   cursor: pointer; }
 
 .jq-selectbox__select {
-  height: 32px;
-  padding: 0 45px 0 10px;
-  border: 1px solid #CCC;
-  border-bottom-color: #B3B3B3;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#E6E6E6));
-  background: -webkit-linear-gradient(#FFF, #E6E6E6);
-  background: -o-linear-gradient(#FFF, #E6E6E6);
-  background: linear-gradient(#FFF, #E6E6E6);
-  -webkit-box-shadow: inset 1px -1px #F1F1F1, inset -1px 0 #F1F1F1, 0 1px 2px rgba(0, 0, 0, 0.1);
-          box-shadow: inset 1px -1px #F1F1F1, inset -1px 0 #F1F1F1, 0 1px 2px rgba(0, 0, 0, 0.1);
-  font: 14px/32px Arial, sans-serif;
-  color: #333;
-  text-shadow: 1px 1px #FFF; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background: #fff;
+  padding: 6px 50px 6px 18px;
+  height: 40px;
+  color: #979797;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; }
 
 .jq-selectbox__select:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#F6F6F6), to(#E6E6E6));
-  background: -webkit-linear-gradient(#F6F6F6, #E6E6E6);
-  background: -o-linear-gradient(#F6F6F6, #E6E6E6);
-  background: linear-gradient(#F6F6F6, #E6E6E6); }
+  border-color: #bababa;
+  outline: none; }
 
 .jq-selectbox__select:active {
-  background: #F5F5F5;
-  -webkit-box-shadow: inset 1px 1px 3px #DDD;
-          box-shadow: inset 1px 1px 3px #DDD; }
+  border-color: #bababa;
+  outline: none; }
 
 .jq-selectbox.focused .jq-selectbox__select {
-  border: 1px solid #5794BF; }
+  border: 1px solid #bababa; }
 
 .jq-selectbox.disabled .jq-selectbox__select {
-  border-color: #CCC;
-  background: #F5F5F5;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  color: #888; }
+  background-color: #fff;
+  border-color: #e3e3e3;
+  cursor: not-allowed; }
 
 .jq-selectbox__select-text {
   display: block;
   width: 100%; }
 
 .jq-selectbox .placeholder {
-  color: #888; }
+  color: #bababa; }
 
 .jq-selectbox__trigger {
   position: absolute;
   top: 0;
   right: 0;
   width: 34px;
-  height: 100%;
-  border-left: 1px solid #CCC; }
+  height: 100%; }
 
 .jq-selectbox__trigger-arrow {
   position: absolute;
-  top: 14px;
-  right: 12px;
+  top: 15px;
+  right: 10px;
   width: 0;
   height: 0;
-  border-top: 5px solid #999;
-  border-right: 5px solid transparent;
-  border-left: 5px solid transparent; }
+  border-top: 7px solid #bababa;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent; }
+
+.jq-selectbox__trigger-arrow::after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  right: -4px;
+  width: 0;
+  height: 0;
+  border-top: 5px solid #fff;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent; }
 
 .jq-selectbox:hover .jq-selectbox__trigger-arrow {
-  border-top-color: #000; }
+  border-top-color: #979797; }
 
 .jq-selectbox.disabled .jq-selectbox__trigger-arrow {
-  border-top-color: #AAA; }
+  border-top-color: #bababa; }
 
 .jq-selectbox__dropdown {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  top: -2px;
   width: 100%;
   margin: 2px 0 0;
   padding: 0;
-  border: 1px solid #CCC;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
-  background: #FFF;
-  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  font: 14px/18px Arial, sans-serif; }
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background: #FFF; }
 
 .jq-selectbox__search {
   margin: 5px; }
@@ -425,20 +431,29 @@ label {
   padding: 0; }
 
 .jq-selectbox li {
-  min-height: 18px;
-  padding: 5px 10px 6px;
-  color: #231F20; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 40px;
+  padding: 6px 18px;
+  color: #979797; }
 
 .jq-selectbox li.selected {
-  background-color: #A3ABB1;
-  color: #FFF; }
+  background-color: #f5f5f2;
+  color: #979797; }
 
 .jq-selectbox li:hover {
-  background-color: #08C;
-  color: #FFF; }
+  background-color: #f5f5f2;
+  color: #979797; }
 
 .jq-selectbox li.disabled {
-  color: #AAA; }
+  background-color: #fff;
+  color: #bababa; }
 
 .jq-selectbox li.disabled:hover {
   background: none; }
@@ -615,6 +630,122 @@ input[type='submit'].styler[disabled] {
   -webkit-box-shadow: none;
           box-shadow: none;
   color: #888; }
+
+.jq-checkbox,
+.jq-radio {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.jq-checkbox input,
+.jq-radio input {
+  position: absolute;
+  z-index: -1;
+  margin: 0;
+  padding: 0;
+  opacity: 0; }
+
+.jq-file {
+  position: relative;
+  display: inline-block;
+  overflow: hidden; }
+
+.jq-file input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  font-size: 100px;
+  line-height: 1em; }
+
+.jq-file__name {
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis; }
+
+.jq-selectbox,
+.jq-select-multiple {
+  position: relative;
+  display: inline-block; }
+
+.jq-selectbox select,
+.jq-select-multiple select {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  opacity: 0; }
+
+.jq-selectbox li,
+.jq-select-multiple li {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap; }
+
+.jq-selectbox {
+  z-index: 10; }
+
+.jq-selectbox__select {
+  position: relative; }
+
+.jq-selectbox__select-text {
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis; }
+
+.jq-selectbox__dropdown {
+  position: absolute; }
+
+.jq-selectbox__search input {
+  -webkit-appearance: textfield; }
+
+.jq-selectbox__search input::-webkit-search-cancel-button,
+.jq-selectbox__search input::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+.jq-selectbox__dropdown ul {
+  position: relative;
+  overflow: auto;
+  overflow-x: hidden;
+  list-style: none;
+  -webkit-overflow-scrolling: touch; }
+
+.jq-select-multiple ul {
+  position: relative;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch; }
+
+.jq-number {
+  display: inline-block; }
+
+.jq-number__field input {
+  -moz-appearance: textfield;
+  text-align: left;
+  /* для Opera Presto */ }
+
+.jq-number__field input::-webkit-inner-spin-button,
+.jq-number__field input::-webkit-outer-spin-button {
+  margin: 0;
+  /* в каких-то браузерах присутствует отступ */
+  -webkit-appearance: none; }
 
 /*************** SCROLLBAR BASE CSS ***************/
 .scroll-wrapper {
@@ -1762,10 +1893,22 @@ input[type='submit'].styler[disabled] {
     padding: 25px 18px; }
     .modal .modal-form-wrap .form-group .page-title {
       margin-bottom: 18px; }
+    .modal .modal-form-wrap .form-group .jq-selectbox {
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1; }
     .modal .modal-form-wrap .form-group:first-child {
-      margin-right: 18px; }
-      .modal .modal-form-wrap .form-group:first-child .form-control + .form-control {
-        margin-left: 18px; }
+      margin-right: 18px;
+      width: 84%; }
+      .modal .modal-form-wrap .form-group:first-child .form-control {
+        margin-right: 18px;
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1; }
+    .modal .modal-form-wrap .form-group:last-child {
+      width: 16%; }
     .modal .modal-form-wrap .form-control + .form-control {
       margin-top: 0; }
   .modal .modal-body {
