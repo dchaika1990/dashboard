@@ -295,6 +295,13 @@
     color: $grey;
     }
   }
+
+  textarea[readonly]{
+    color: $grey;
+    font-size: 12px;
+    font-weight: $fontRegular;
+    line-height: 18px;
+  }
 }
 
 // Date input block
@@ -746,15 +753,40 @@ input{
 }
 
 // range slider
-#custom-handle{
-  top: 12px;
-  width: 0;
-  height: 0;
-  border: 10px solid transparent;
-  border-bottom-color: aqua;
+#slider{
 
-  span{
-    position: absolute;
-    top: 25px;
+  &.ui-slider.ui-corner-all.ui-slider-horizontal.ui-widget.ui-widget-content{
+    border: none;
+    border-radius: 0;
+    background-color: $lightGrey;
+  }
+
+  .ui-slider-horizontal{
+    height: 5px;
+  }
+
+  .ui-slider-range.ui-corner-all.ui-widget-header.ui-slider-range-min{
+    border-radius: 0;
+  }
+
+  .ui-widget-header{
+    background-color: $orange;
+  }
+
+  #custom-handle{
+    top: 12px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: aqua;
+
+    span{
+      position: absolute;
+      top: 25px;
+    }
+
+
   }
 }
+
+

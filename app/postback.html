@@ -59,10 +59,10 @@
             <li><a href=""><span class="icon icon-general"></span>General</a></li>
             <li><a href=""><span class="icon icon-details"></span>Details</a></li>
             <li><a href=""><span class="icon icon-links"></span>Links</a></li>
-            <li class="active"><a href=""><span class="icon icon-banners"></span>Banners</a></li>
+            <li><a href=""><span class="icon icon-banners"></span>Banners</a></li>
             <li><a href=""><span class="icon icon-personaldata"></span>Personal data</a></li>
             <li><a href=""><span class="icon icon-payout"></span>Payout</a></li>
-            <li><a href=""><span class="icon icon-postback"></span>Postback</a></li>
+            <li class="active"><a href=""><span class="icon icon-postback"></span>Postback</a></li>
         </ul>
         <div class="your-manager">
             <h3 class="page-title small-title">Your manager</h3>
@@ -80,122 +80,123 @@
 
 <main>
     <div class="content-wrapper">
-        <div class="panel">
+        <div class="panel postback">
             <div class="panel-header">
                 <h3 class="page-title">New postback</h3>
             </div>
-            <div class="panel-date text-center">
-                <form class="datepicker-form">
-                    <div class="date-input-wrap">
-                        <input class="date-control" type="text" id="from" name="from">
-                        <input class="date-control" type="text" id="to" name="to">
-                    </div>
-                    <button class="btn btn-action"><span class="icon icon-refresh"></span></button>
-                </form>
-            </div>
             <div class="panel-body">
-                <div class="container container-sm">
-                    <div class="statistics flex-container justify-content-sb">
-                        <ul>
-                            <li>
-                                <span class="statistics-title">Visit Signups</span>
-                                <span>124</span>
-                            </li>
-                            <li>
-                                <span class="statistics-title">FTD</span>
-                                <span>425</span>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <span class="statistics-title">Net Deposit</span>
-                                <span>564</span>
-                            </li>
-                            <li>
-                                <span class="statistics-title">Turn over</span>
-                                <span>432</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="chart">
-                        <div class="chart-title title-margin">
-                            <h3 class="section-title">Earnings chart</h3>
+                <div class="container">
+                    <div class="postback-form-wrap">
+                        <span>You can insert some parameters in this postback:</span>
+                        <div class="form-group-wrap flex-container align-items-center">
+                            <div class="form-group">
+                                <h3 class="page-title">Signup</h3>
+                                <textarea class="form-control" readonly>
+crm_userId =%user_id%
+subid =%p%
+                            </textarea>
+                            </div>
+                            <div class="form-group">
+                                <h3 class="page-title">Deposit</h3>
+                                <textarea class="form-control" readonly>
+crm_userId =%user_id%
+subid =%p%
+                            </textarea>
+                            </div>
                         </div>
-                        <div class="tabs flex-container align-items-center">
-                            <a class="tab">
-                                <span class="circle circle-blue"></span>
-                                <span>Signups</span>
-                            </a>
-                            <a class="tab active">
-                                <span class="circle circle-orange"></span>
-                                <span>FTD</span>
-                            </a>
-                            <a class="tab">
-                                <span class="circle circle-green"></span>
-                                <span>Eaned</span>
-                            </a>
-                        </div>
-                        <div class="chart-wrap">
-                            <canvas id="myChart" width="400" height="400"></canvas>
+                        <div class="form-group-wrap flex-container align-items-center">
+                            <div class="form-group">
+                                <h3 class="page-title">Postback type</h3>
+                                <select class="select-box">
+                                    <option>S2S(http://..)</option>
+                                    <option>S2S(http://..)</option>
+                                    <option>S2S(http://..)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h3 class="page-title">To countries</h3>
+                                <select class="select-box">
+                                    <option>Select countries</option>
+                                    <option>Select countries</option>
+                                    <option>Select countries</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h3 class="page-title">Sending options</h3>
+                                <select class="select-box">
+                                    <option>Select</option>
+                                    <option>Select</option>
+                                    <option>Select</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="panel links">
-            <div class="panel-header">
-                <h3 class="page-title">Links</h3>
-            </div>
-            <div class="panel-body">
-                <div class="btn-row text-center">
-                    <a href="" class="btn btn-action" data-modal="#add-links-modal">Add new</a>
-                </div>
-                <div class="container-sm">
-                    <table class="table full-width">
-                        <tr>
-                            <td class="text-bold td-title">Home page</td>
-                            <td><a href="" class="link large-link">http://www.homepage.com</a></td>
-                        </tr>
-                        <tr>
-                            <td class="text-bold td-title">Currently offer</td>
-                            <td><a href="" class="link large-link">http://www.currently.com</a></td>
-                        </tr>
-                        <tr>
-                            <td class="text-bold td-title">Blurpix</td>
-                            <td><a href="" class="link large-link">http://www.blurpix.com</a></td>
-                        </tr>
-                        <tr>
-                            <td class="text-bold td-title">Your Site</td>
-                            <td><a href="" class="link large-link">http://www.yoursite.com</a></td>
-                        </tr>
-                        <tr>
-                            <td class="text-bold td-title">Google</td>
-                            <td><a href="" class="link large-link">http://www.google.com</a></td>
-                        </tr>
-                        <tr>
-                            <td class="text-bold td-title">Facebook</td>
-                            <td><a href="" class="link large-link">Facebook</a></td>
-                        </tr>
-                        <tr>
-                            <td class="text-bold td-title">Dashboard</td>
-                            <td><a href="" class="link large-link">http://www.dashboard.com</a></td>
-                        </tr>
-                        <tr>
-                            <td class="text-bold td-title">Blurax</td>
-                            <td><a href="" class="link large-link">http://www.blurax.com</a></td>
-                        </tr>
-                        <tr>
-                            <td class="text-bold td-title">Piece of Wine</td>
-                            <td><a href="" class="link large-link">Piece of Wine</a></td>
-                        </tr>
-                        <tr>
-                            <td class="text-bold td-title">Twitter</td>
-                            <td><a href="" class="link large-link">http://www.twitter.com</a></td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="btn-row text-center">
-                    <a href="" class="btn btn-action" data-modal="#add-links-modal">Add new</a>
+            <div class="panel-footer">
+                <div class="container">
+                    <div class="postback-form-wrap">
+                        <div class="form-group-wrap flex-container">
+                            <div class="form-group">
+                                <h3 class="page-title">
+                                    <span class="text-alarm">not</span>
+                                    send statuses
+                                </h3>
+                                <div class="checkboxes">
+                                    <div class="flex-container flex-column scrollbar-inner">
+                                        <div class="checkbox-group flex-container justify-content-sb align-items-center">
+                                            <input type="checkbox" name="link1" id="link12">
+                                            <label for="link12" class="flex-container align-items-center">checkNumber</label>
+                                            <span class="icon icon-show"></span>
+                                        </div>
+                                        <div class="checkbox-group flex-container justify-content-sb align-items-center">
+                                            <input type="checkbox" name="link1" id="link13">
+                                            <label for="link13" class="flex-container align-items-center">checkNumber</label>
+                                            <span class="icon icon-show"></span>
+                                        </div>
+                                        <div class="checkbox-group flex-container justify-content-sb align-items-center">
+                                            <input type="checkbox" name="link1" id="link14">
+                                            <label for="link14" class="flex-container align-items-center">checkNumber</label>
+                                            <span class="icon icon-show"></span>
+                                        </div>
+                                        <div class="checkbox-group flex-container justify-content-sb align-items-center">
+                                            <input type="checkbox" name="link1" id="link15">
+                                            <label for="link15" class="flex-container align-items-center">checkNumber</label>
+                                            <span class="icon icon-show"></span>
+                                        </div>
+                                        <div class="checkbox-group flex-container justify-content-sb align-items-center">
+                                            <input type="checkbox" name="link1" id="link16">
+                                            <label for="link16" class="flex-container align-items-center">checkNumber</label>
+                                            <span class="icon icon-show"></span>
+                                        </div>
+                                        <div class="checkbox-group flex-container justify-content-sb align-items-center">
+                                            <input type="checkbox" name="link1" id="link17">
+                                            <label for="link17" class="flex-container align-items-center">checkNumber</label>
+                                            <span class="icon icon-show"></span>
+                                        </div>
+                                        <div class="checkbox-group flex-container justify-content-sb align-items-center">
+                                            <input type="checkbox" name="link1" id="link18">
+                                            <label for="link18" class="flex-container align-items-center">checkNumber</label>
+                                            <span class="icon icon-show"></span>
+                                        </div>
+                                        <div class="checkbox-group flex-container justify-content-sb align-items-center">
+                                            <input type="checkbox" name="link1" id="link19">
+                                            <label for="link19" class="flex-container align-items-center">checkNumber</label>
+                                            <span class="icon icon-show"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h3 class="page-title">Send after:</h3>
+                                <div id="slider">
+                                    <div id="custom-handle" class="ui-slider-handle">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

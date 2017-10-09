@@ -49,3 +49,67 @@ main{
     margin-right: $defaultIndent;
   }
 }
+
+.postback{
+
+  .postback-form-wrap{
+    padding: 35px 0;
+
+    & > span{
+      font-weight: $fontBold;
+      color: $black;
+    }
+    & .page-title{
+      margin: 20px 0;
+      text-transform: inherit;
+    }
+
+    .form-group{
+      flex-grow: 1;
+    }
+
+    textarea{
+      width: 100%;
+      height: 187px;
+      resize: none;
+    }
+  }
+
+  div.form-group-wrap:nth-child(2){
+    div.form-group:first-child{
+      margin-right: $defaultIndent;
+    }
+  }
+
+  div.form-group-wrap:nth-child(3){
+    div.form-group:nth-child(2){
+      margin: 0 $defaultIndent;
+    }
+  }
+
+  .panel-footer{
+    padding: 0 $defaultIndent;
+    border-top: 1px solid $lightGrey;
+
+    .form-group{
+      flex-grow: inherit;
+      width: 49%;
+    }
+
+    .form-group:first-child{
+      margin-right: $defaultIndent;
+    }
+
+    .checkboxes{
+      padding: $defaultIndent 0;
+
+      .scroll-wrapper{
+        height: 175px;
+      }
+
+      .checkbox-group{
+        padding: 23px 20px;
+      }
+    }
+  }
+}
