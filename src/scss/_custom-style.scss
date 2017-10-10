@@ -90,26 +90,37 @@ main{
   .panel-footer{
     padding: 0 $defaultIndent;
     border-top: 1px solid $lightGrey;
+    border-bottom: 1px solid $lightGrey;
 
-    .form-group{
-      flex-grow: inherit;
-      width: 49%;
-    }
+    .postback-form-wrap{
+      padding: 0;
 
-    .form-group:first-child{
-      margin-right: $defaultIndent;
-    }
-
-    .checkboxes{
-      padding: $defaultIndent 0;
-
-      .scroll-wrapper{
-        height: 175px;
+      .form-group{
+        flex-grow: inherit;
+        width: 49%;
       }
 
-      .checkbox-group{
-        padding: 23px 20px;
+      .form-group:first-child{
+        margin-right: $defaultIndent;
+      }
+      .form-group:last-child{
+        margin-left: $defaultIndent;
+      }
+
+      .checkboxes{
+        padding: $defaultIndent 0;
+
+        .scroll-wrapper{
+          height: 175px;
+        }
+
+        .checkbox-group{
+          padding: 23px 20px;
+        }
       }
     }
+  }
+  .btn{
+    margin:$defaultIndent;
   }
 }

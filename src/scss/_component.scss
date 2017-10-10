@@ -635,7 +635,7 @@
   }
 
   .modal-form-wrap{
-    border-bottom: 1px solid $lightGrey;
+
     padding: 25px $defaultIndent;
 
 
@@ -643,19 +643,15 @@
       .page-title{
         margin-bottom: $defaultIndent;
       }
-
-      & .jq-selectbox{
-        flex-grow: 1;
-      }
     }
 
-    .form-group:first-child{
+    .form-group:first-child,
+    .form-group:nth-child(2){
       margin-right: $defaultIndent;
-      width: 84%;
+      flex-grow: 1;
 
       .form-control{
-        margin-right: $defaultIndent;
-        flex-grow: 1;
+        width: 100%;
       }
     }
 
@@ -669,8 +665,63 @@
 
   }
 
+  .form-group-wrap{
+    padding: 0 18px 30px 18px;
+
+    & .page-title{
+      margin-bottom: 20px;
+      text-transform: inherit;
+    }
+
+    .form-group{
+      flex-grow: 1;
+    }
+
+    div.form-group:nth-child(2){
+      margin: 0 $defaultIndent;
+    }
+  }
+
   .modal-body{
     padding: 0 $defaultIndent;
+    border-top: 1px solid $lightGrey;
+
+    .modal-body-form-wrap{
+      padding: 0;
+
+      .form-group-wrap{
+        padding: 0;
+
+        .form-group{
+          flex-grow: inherit;
+          width: 49%;
+
+          .page-title{
+            margin-top: 20px;
+          }
+        }
+
+        .form-group:first-child{
+          margin-right: $defaultIndent;
+        }
+        .form-group:last-child{
+          margin-left: $defaultIndent;
+        }
+
+        .checkboxes{
+          padding: $defaultIndent 0;
+
+          .scroll-wrapper{
+            height: 405px;
+          }
+
+          .checkbox-group{
+            padding: 23px 20px;
+          }
+        }
+      }
+
+    }
   }
 
   .modal-footer{
@@ -752,6 +803,10 @@ input{
   }
 }
 
+#add-banners-modal{
+  width: 1075px;
+}
+
 // range slider
 #slider{
 
@@ -774,17 +829,23 @@ input{
   }
 
   #custom-handle{
-    top: 12px;
+    position: relative;
+    top: 19px;
     width: 0;
     height: 0;
-    border: 10px solid transparent;
-    border-bottom-color: aqua;
+    border-top: none;
+    border-bottom: 22px solid $orange;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    background-color: #fff;
+    border-radius: 0;
+    outline: none;
 
     span{
       position: absolute;
-      top: 25px;
+      top: 35px;
+      left: -22px;
     }
-
 
   }
 }
