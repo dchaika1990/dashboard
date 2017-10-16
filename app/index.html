@@ -22,10 +22,17 @@
 <!-- HEADER START -->
 <header class="fixed-to-top header">
     <ul class="flex-container  user-control">
-            <li class="cash flex-container align-items-center">
+            <li class="cash flex-container align-items-center dropdown-wrap">
                 <span class="icon icon-wallet"></span>
                 <span class="text-bold">$1,500.00</span>
-                <a href="" class="icon icon-arrow-down"></a>
+                <span class="icon icon-arrow-down"></span>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="">link</a></li>
+                        <li><a href="">link</a></li>
+                        <li><a href="">link</a></li>
+                    </ul>
+                </div>
             </li>
             <li class="top-notification flex-container align-items-center">
                 <span class="icon icon-notification"></span>
@@ -42,74 +49,76 @@
 
 <!-- ASIDE START -->
 <aside class="fixed-to-top aside">
-    <div class="menu-control flex-container align-items-center justify-content-sb">
-        <div class="logo">
-            <a href="#">
-                <img src="img/logo.png" alt="logo">
-            </a>
-        </div>
-        <div class="menu-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-    <div class="aside-menu">
-        <ul>
-            <li class="active">
-                <a href="index.html">
-                    <span class="text-center icon icon-general"></span>
-                    <span class="menu-link">General</span>
+
+        <div class="menu-control flex-container align-items-center justify-content-sb">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/logo.png" alt="logo">
                 </a>
-            </li>
-            <li>
-                <a href="details.html">
-                    <span class="text-center icon icon-details"></span>
-                    <span class="menu-link">Details</span>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <span class="text-center icon icon-links"></span>
-                    <span class="menu-link">Links</span>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <span class="text-center icon icon-banners"></span>
-                    <span class="menu-link">Banners</span>
-                </a>
-            </li>
-            <li>
-                <a href="personal-data.html">
-                    <span class="text-center icon icon-personaldata"></span>
-                    <span class="menu-link">Personal data</span>
-                </a>
-            </li>
-            <li>
-                <a href="payout.html">
-                    <span class="text-center icon icon-payout"></span>
-                    <span class="menu-link">Payout</span>
-                </a>
-            </li>
-            <li>
-                <a href="postback.html">
-                    <span class="text-center icon icon-postback"></span>
-                    <span class="menu-link">Postback</span>
-                </a>
-            </li>
-        </ul>
-        <div class="your-manager">
-            <h3 class="page-title small-title">Your manager</h3>
-            <div class="manager-info flex-container align-items-center">
-                <div class="manager-photo">
-                    <img src="img/manager-photo.png" alt="manager-photo">
-                    <div class="status online"></div>
-                </div>
-                <a class="link">Mikhael E.</a>
+            </div>
+            <div class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-    </div>
+        <div class="aside-menu">
+            <ul>
+                <li class="active">
+                    <a href="index.html">
+                        <span class="text-center icon icon-general"></span>
+                        <span class="menu-link">General</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="details.html">
+                        <span class="text-center icon icon-details"></span>
+                        <span class="menu-link">Details</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="text-center icon icon-links"></span>
+                        <span class="menu-link">Links</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="text-center icon icon-banners"></span>
+                        <span class="menu-link">Banners</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="personal-data.html">
+                        <span class="text-center icon icon-personaldata"></span>
+                        <span class="menu-link">Personal data</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="payout.html">
+                        <span class="text-center icon icon-payout"></span>
+                        <span class="menu-link">Payout</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="postback.html">
+                        <span class="text-center icon icon-postback"></span>
+                        <span class="menu-link">Postback</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="your-manager">
+                <h3 class="page-title small-title">Your manager</h3>
+                <div class="manager-info flex-container align-items-center">
+                    <div class="manager-photo">
+                        <img src="img/manager-photo.png" alt="manager-photo">
+                        <div class="status online"></div>
+                    </div>
+                    <a class="link">Mikhael E.</a>
+                </div>
+            </div>
+        </div>
+
 </aside>
 <!-- ASIDE END -->
 
@@ -156,22 +165,22 @@
                         <div class="chart-title title-margin">
                             <h3 class="section-title">Earnings chart</h3>
                         </div>
-                        <div class="tabs flex-container align-items-center">
-                            <a class="tab">
-                                <span class="circle circle-blue"></span>
-                                <span>Signups</span>
-                            </a>
-                            <a class="tab active">
-                                <span class="circle circle-orange"></span>
-                                <span>FTD</span>
-                            </a>
-                            <a class="tab">
-                                <span class="circle circle-green"></span>
-                                <span>Eaned</span>
-                            </a>
-                        </div>
+                        <!--<div class="tabs flex-container align-items-center">-->
+                            <!--<a class="tab">-->
+                                <!--<span class="circle circle-blue"></span>-->
+                                <!--<span>Signups</span>-->
+                            <!--</a>-->
+                            <!--<a class="tab active">-->
+                                <!--<span class="circle circle-orange"></span>-->
+                                <!--<span>FTD</span>-->
+                            <!--</a>-->
+                            <!--<a class="tab">-->
+                                <!--<span class="circle circle-green"></span>-->
+                                <!--<span>Eaned</span>-->
+                            <!--</a>-->
+                        <!--</div>-->
                         <div class="chart-wrap">
-                            <canvas id="myChart" width="400" height="400"></canvas>
+                            <canvas id="myChart" width="600" height="300"></canvas>
                         </div>
                     </div>
                 </div>
@@ -266,9 +275,8 @@
             <h3 class="page-title title-margin">Language</h3>
             <form class="flex-container align-items-center">
                 <select class="select-box">
-                    <option>Select compain</option>
-                    <option>Compain 1</option>
-                    <option>Compain 1</option>
+                    <option><span>En</span></option>
+                    <option>EN</option>
                 </select>
             </form>
         </div>
@@ -346,6 +354,16 @@
         </form>
     </div>
 </div>
+
+<!-- Loader start -->
+<div id="loading">
+    <div id="loading-center">
+        <div id="loading-center-absolute">
+            <div id="object"></div>
+        </div>
+    </div>
+</div>
+<!-- Loader end -->
 
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

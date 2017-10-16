@@ -21,11 +21,29 @@
 <body>
 <!-- HEADER START -->
 <header class="fixed-to-top header">
-    <div class="flex-container container-fluid">
-        <div class="user-control">
-
-        </div>
-    </div>
+    <ul class="flex-container  user-control">
+        <li class="cash flex-container align-items-center dropdown-wrap">
+            <span class="icon icon-wallet"></span>
+            <span class="text-bold">$1,500.00</span>
+            <span class="icon icon-arrow-down"></span>
+            <div class="dropdown-menu">
+                <ul>
+                    <li><a href="">link</a></li>
+                    <li><a href="">link</a></li>
+                    <li><a href="">link</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="top-notification flex-container align-items-center">
+            <span class="icon icon-notification"></span>
+            <div class="top-notification-circle"></div>
+        </li>
+        <li class="top-user-name flex-container align-items-center">
+            <span class="icon icon-login"></span>
+            <span> Leonardo Dicaprio</span>
+        </li>
+        <li class="log-out flex-container align-items-center"><a href="" class="icon icon-quit"></a></li>
+    </ul>
 </header>
 <!-- HEADER END -->
 
@@ -45,13 +63,48 @@
     </div>
     <div class="aside-menu">
         <ul>
-            <li><a href=""><span class="icon icon-general"></span>General</a></li>
-            <li><a href=""><span class="icon icon-details"></span>Details</a></li>
-            <li><a href=""><span class="icon icon-links"></span>Links</a></li>
-            <li><a href=""><span class="icon icon-banners"></span>Banners</a></li>
-            <li><a href=""><span class="icon icon-personaldata"></span>Personal data</a></li>
-            <li class="active"><a href=""><span class="icon icon-payout"></span>Payout</a></li>
-            <li><a href=""><span class="icon icon-postback"></span>Postback</a></li>
+            <li>
+                <a href="index.html">
+                    <span class="text-center icon icon-general"></span>
+                    <span class="menu-link">General</span>
+                </a>
+            </li>
+            <li>
+                <a href="details.html">
+                    <span class="text-center icon icon-details"></span>
+                    <span class="menu-link">Details</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="text-center icon icon-links"></span>
+                    <span class="menu-link">Links</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="text-center icon icon-banners"></span>
+                    <span class="menu-link">Banners</span>
+                </a>
+            </li>
+            <li>
+                <a href="personal-data.html">
+                    <span class="text-center icon icon-personaldata"></span>
+                    <span class="menu-link">Personal data</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="payout.html">
+                    <span class="text-center icon icon-payout"></span>
+                    <span class="menu-link">Payout</span>
+                </a>
+            </li>
+            <li>
+                <a href="postback.html">
+                    <span class="text-center icon icon-postback"></span>
+                    <span class="menu-link">Postback</span>
+                </a>
+            </li>
         </ul>
         <div class="your-manager">
             <h3 class="page-title small-title">Your manager</h3>
@@ -145,6 +198,8 @@
                             </tr>
                         </tbody>
                     </table>
+                </div>
+                <div class="container">
                     <ul class="pagination flex-container align-items-center">
                         <li><span class="icon icon-arrow-left"></span></li>
                         <li class="active"><a class="large-link" href="">1</a></li>
@@ -163,6 +218,16 @@
     </div>
 </main>
 
+<!-- Loader start -->
+<div id="loading">
+    <div id="loading-center">
+        <div id="loading-center-absolute">
+            <div id="object"></div>
+        </div>
+    </div>
+</div>
+<!-- Loader end -->
+
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -173,6 +238,9 @@
 
 <!-- Init plugins -->
 <script src="js/init.js"></script>
+
+<!-- Plugin -->
+<script src="js/plugins.min.js"></script>
 
 </body>
 </html>

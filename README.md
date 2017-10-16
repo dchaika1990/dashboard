@@ -171,3 +171,119 @@ gulp.task('clear', function () {
 gulp.task('default', ['watch']);
 
 ```
+
+---
+
+Спецификация к проекту "Dashboard"
+-------------------------------
+
+#### Подключаемые плагины
++ **Formstayler** - плагин для стилизации элементов форм;
++ **Datepicker** - форма для выбора даты;
++ **Chart.js** - график;
++ **jQuery.bPopup.js** - плагин для модальноо окна;
++ **jQuery.Scrollbar** - плагин для стилизации скрола;
++ **jQuery UI Slider** - стилизация слайдера;
++ **Loader** - плагин для стилизации загрузки.
+---
+#### Default Classes
++ **.text-bold** - обладает свойством *font-weight: 700*;
++ **.text-center** - обладает свойством *text-align: center*;
++ **.text-right** - обладает свойством *text-align: right*;
++ **.title-margin** - обладает свойством *margin-bottom: 35px*;
++ **text-alarm** - обладает свойствами *color: #ff0000; text-transform: uppercase*;
++ **.fixed-to-top** - обладает свойствами *position: fixed; z-index: 99; top: 0*;
++ **.flex-container** - обладает свойством *display: flex*;
++ **.align-items-center** - обладает свойством *align-items: center*;
++ **.justify-content-sb** - обладает свойством *justify-content: space-between*;
++ **.flex-column** - обладает свойством *flex-direction: column*;
++ **.border** - обладает свойством *border-right: 1px solid $lightGrey*
+---
+#### Default components
++ **.section-title** - задает свойства для основных заголовков;
++ **.page-title** - задает заголовкам заглавные литеры;
++ **.page-title.small-title** - заголовок с меньшим шрифтом;
++ **#Loader** - стилизация загрузчика;
++ **.link** - стилизация ссылок;
++ **.btn** - стилизация кнопок;
++ **.icon** - стилизация иконок;
++ **.table** - стилизация таблицы;
++ **.pagination** - стилизация пагинации;
++ **.circle** - стилизация кругов для табов;
++ **.chart** - стилизация табов;
++ **.form-control** - стилизация форм;
++ **.datepicker-form** - стилизация формы выбора даты;
++ **.notification** стилизация уведомлений;
++ **.container-fluid** - создаем контейнер с одинаковыми отступами для размещения в него основного контента;
++ **.container-sm** - специальный контейнер с меньшой шириной;
++ **.row** - служит для оступов по краям;
++ **.header** - стилизация шапки;
++ **.aside** - стилизация бокового меню;
++ **.content-wrapper** - основные свойства для блоков, на которых будет размещатся основной контент;
++ **.modal** - модальное окно;
+---
+#### Используемые переменные
+##### Font var
++ $fontFamily: 'Roboto', sans-serif;
++ $fontLight: 300;
++ $fontRegular: 400;
++ $fontMedium: 500;
++ $fontBold: 700;
++ $LineHeight: 1;
++ $fontSize: 14px;
+
+##### Color var
++ $black: #333;
++ $darkGrey: #979797;
++ $grey: #bababa;
++ $lightGrey: #e3e3e3;
++ $xsLightGrey: #f5f5f2;
++ $orange: #f58220;
++ $orangeLight: #ffa200;
++ $green: #04ae00;
++ $lightGgreen: #74b67a;
++ $xsLightGgreen: #96cc9b;
++ $red: #ff0000;
++ $pink: #de5252;
++ $lightPink: #ec7171;
++ $blue: #56819f;
+
+##### Default padding
++ $defaultIndent: 18px;
+
+##### LINK component
++ $linkColor: #56819f;
++ $linkHoverColor: #ffa200;
++ $linkFontSizeDefault: 13px;
++ $linkLargeFont: 16px;
+
+##### TITLE component
++ $titleColor: #a6a6a6;
++ $titleFontSize: 16px;
++ $smallTitleFontSize: 14px;
+
+##### Btn component
++ $btnFontSize: 18px;
++ $btnDefaultColor: #fff;
++ $btnDefaultBg: $darkGrey;
++ $btnDefaultBgHover: $grey;
++ $btnActionBg: $orange;
++ $btnActionBgHover: $orangeLight;
++ $btnDisabledBg: $lightGrey;
++ $btnDisabledBgHover: $lightGrey;
+
+##### Table component
++ $tableFontSize: 13px;
++ $tableTrHover:#f1f3f3;
+
+##### Tabs component
++ $tabsCircleGreenBG: #59b66d;
++ $tabsCircleBlueBG: #80bfca;
++ $tabsCircleOrangeBG: #ff9a38;
+
+##### Aside component
++ $asideBG: #191919;
++ $asideWidth: 188px;
+
+##### Sidebar
++ $sidebarMobileWidth: 60px;

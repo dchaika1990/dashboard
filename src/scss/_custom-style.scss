@@ -50,6 +50,51 @@ main{
   }
 }
 
+@media (max-width: 1199px){
+  .panel.payout{
+    .panel-body{
+      .container{
+        .table{
+          font-size: 12px;
+
+          thead{
+            th{
+              padding-left: 10px;
+              padding-right: 10px;
+            }
+          }
+          tbody{
+            tr{
+              td{
+                padding: 15px 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 599px){
+  .panel.payout{
+    .panel-body{
+      .container:first-child{
+        overflow-x: auto;
+        .table{
+          width: 450px;
+
+        }
+      }
+      .container:last-child{
+        .pagination{
+          padding-top: $defaultIndent;
+        }
+      }
+    }
+  }
+}
+
 .postback{
 
   .postback-form-wrap{
@@ -66,6 +111,16 @@ main{
 
     .form-group{
       flex-grow: 1;
+
+      .jq-selectbox__dropdown{
+        width: 100% !important;
+        bottom: auto !important;
+        top: -2px !important;
+
+        .jq-selectbox__dropdown ul{
+          max-height: max-content !important;
+        }
+      }
     }
 
     textarea{
@@ -73,19 +128,21 @@ main{
       height: 187px;
       resize: none;
     }
-  }
 
-  div.form-group-wrap:nth-child(2){
-    div.form-group:first-child{
-      margin-right: $defaultIndent;
+    div.form-group-wrap:nth-child(2){
+      div.form-group:first-child{
+        margin-right: $defaultIndent;
+      }
+    }
+
+    div.form-group-wrap:nth-child(3){
+      div.form-group:nth-child(2){
+        margin: 0 $defaultIndent;
+      }
     }
   }
 
-  div.form-group-wrap:nth-child(3){
-    div.form-group:nth-child(2){
-      margin: 0 $defaultIndent;
-    }
-  }
+
 
   .panel-footer{
     padding: 0 $defaultIndent;
@@ -115,7 +172,12 @@ main{
         }
 
         .checkbox-group{
+          margin-right: 35px;
           padding: 23px 20px;
+
+          &:hover{
+            background-color: $xsLightGrey;
+          }
         }
       }
     }
@@ -125,6 +187,72 @@ main{
   }
 }
 
+@media (max-width: 767px){
+  .postback{
+
+      .postback-form-wrap{
+        .form-group-wrap{
+          flex-wrap: wrap;
+
+          .form-group{
+            width: 100%;
+            margin: 0;
+          }
+          .border{
+            display: none;
+          }
+        }
+      }
+    .panel-body{
+      .postback-form-wrap{
+        div.form-group-wrap:nth-child(2){
+          div.form-group:first-child{
+            margin-right: 0;
+          }
+        }
+
+        div.form-group-wrap:nth-child(3){
+          div.form-group:nth-child(2){
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .panel-footer{
+      .postback-form-wrap{
+        .form-group:first-child{
+          margin-right: 0;
+        }
+        .form-group:last-child{
+          margin-left: 0;
+          padding-bottom: 80px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 479px){
+  .postback{
+    .panel-footer{
+      .postback-form-wrap{
+        .checkboxes{
+          .checkbox-group{
+            padding: 20px 8px;
+
+            .icon{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .btn-row{
+    text-align: center;
+  }
+}
 
 ._mobileSidebar{
 
